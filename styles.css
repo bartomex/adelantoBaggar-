@@ -1,0 +1,1746 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-general {
+  width: 100%;
+  max-width: 4000px;
+  min-width: 500px;
+
+}
+
+header {
+  top: 0;
+  width: 1279px;
+  height: 100px;
+  background-color: #001731;
+  position: fixed;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.logo img {
+  margin-left: 50px;
+  margin-top: 33px;
+  height: 34.71px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  height: 50px;
+  list-style: none;
+  font-size: 16px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  padding-top: 20px;
+  margin-top: 35px;
+  box-sizing: border-box;
+}
+
+.menu li .opciones-menu {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  line-height: 19px;
+}
+
+/* PROCESO PARA MENU FLOTANTE DE HOVER */
+.navegacion .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navegacion .opciones-menu {
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 7px 15px;
+}
+
+.target {
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
+.navegacion .opciones-menu, .target {
+  transition: all .35s ease-in-out;
+}
+
+.iniciar-sesion-button {
+  padding: 12px;
+}
+
+.iniciar-sesion-button:hover {
+  border-radius: 50px;
+  background-color: rgb(20, 176, 171);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.home {
+  width: 1276px;
+  height: 710px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.slogan {
+  display: flex;
+  font-size: 52px;
+  height: 100px;
+  width: 1230px;
+  line-height: 68px;
+  color: black;
+  font-weight: bold;
+  font-family: Montserrat;
+  margin-top: 140px;
+  padding-left: 50px;
+  margin-bottom: 70px;
+}
+
+.slogan p {
+  margin-bottom: 50px;
+  margin-right: 73px;
+  height: 100px;
+}
+
+.slogan img {
+  width: 579px;
+  height: 500px;
+}
+
+/* INPUTS */
+.inputs {
+  z-index: 1;
+  margin-right: 100px;
+  width: 650px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-localizador {
+  padding-left: 50px;
+}
+
+.input1-border {
+  width: 529px;
+  height: 54px;
+  border: none;
+  border-radius: 35.5px;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  display: flex;
+  justify-content: flex-start;
+  left: 20px;
+  background-color:  #FFFFFF;
+  padding-left: 40px;
+}
+
+.localizador {
+  background-color: #FFFFFF;
+  font-family: Montserrat;
+  width: 480px;
+  height: 30px;
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 20px;
+  bottom: 0;
+  border-color: transparent;
+  text-shadow: none;
+}
+
+.localizador:focus {
+  outline: none;
+}
+
+.input-localizador img {
+  position: absolute;
+  height: 19.55px;
+  width: 15.19px;
+  left: 80px;
+  padding-top: 16px;
+}
+
+/* SEGUNDA FILA */
+.calendarObjects {
+  display: inline-block;
+}
+
+.input2-border {
+  display: inline-block;
+  width: 255px;
+  height: 54px;
+  border: none;
+  border-radius: 35.5px;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  background-color: #FFFFFF;
+  color: gray;
+  font-family: Montserrat;
+  text-align: right;
+  margin-left: 50px;
+
+}
+
+.calendario {
+  font-size: 20px;
+  width: 195px;
+  height: 35px;
+  border: none;
+  border-radius: 35.5px;
+  background-color: #FFFFFF;
+  color: gray;
+  font-family: Montserrat;
+  text-align: right;
+  display: inline-block;
+}
+
+.calendario:hover {
+  cursor: pointer;
+}
+
+.calendario:focus {
+  outline: none;
+}
+
+.calendar-icon {
+  height: 19.55px;
+  width: 19.19px;
+  display: inline-block;
+  padding-right: 9px;
+  padding-top: 17px;
+
+}
+
+.input3-border {
+  display: inline-block;
+  width: 255px;
+  height: 54px;
+  border: none;
+  border-radius: 35.5px;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  background-color: #FFFFFF;
+  color: gray;
+  font-family: Montserrat;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.num-maletas {
+  font-size: 20px;
+  font-family: Montserrat;
+  width: 150px;
+  height: 35px;
+  padding-top: 10px;
+  border: none;
+  background-color: #FFFFFF;
+  color: gray;
+  text-align: left;
+}
+
+.num-maletas:hover {
+  cursor: pointer;
+}
+
+.num-maletas:focus {
+  outline: none;
+}
+
+.maleta-icon {
+  height: 19.55px;
+  width: 19.19px;
+  padding-right: 15px;
+}
+
+.buscar {
+  width: 255px;
+  height: 54px;
+  border-radius: 35.5px;
+  background-color: #FF4847;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.buscar:focus {
+  outline: none;
+}
+
+.buscar:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.horas-input {
+  font-size: 20px;
+  font-family: Montserrat;
+  width: 170px;
+  height: 45px;
+  border: none;
+  background-color: #FFFFFF;
+  color: gray;
+}
+
+.img-reloj {
+  height: 20px;
+  width: 20px;
+  padding-top: 17px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+
+/* SECCION EXPLORA ESPACIOS BAGGARU */
+
+#explora-lugares-baggaru {
+  padding-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 450px;
+  box-sizing: border-box;
+}
+
+#explora-lugares-baggaru h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  color: #001730;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.recuadros-explora-lugares {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recuadro1 {
+  width: 350px;
+  height: 150px;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  border-radius: 10px;
+  font-family: Montserrat;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-bottom: 10px solid #FF4847;
+}
+
+.recuadro1-title {
+  display: inline-block;
+  padding-right: 80px;
+  font-size:25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recuardro1-distancia {
+  display: inline-block;
+}
+
+.recuadro1-tipo-de-lugar {
+  margin-bottom: 40px;
+  font-size:18px;
+}
+
+.recuadro1-rating {
+  display: inline-block;
+  padding-right: 205px;
+}
+
+.recuadro1-ver-más {
+  display: inline-block;
+}
+
+.recuadro2 {
+  width: 350px;
+  height: 150px;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  border-radius: 10px;
+  font-family: Montserrat;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-bottom: 10px solid #33EEE6;
+}
+
+.recuadro2-title {
+  display: inline-block;
+  padding-right: 70px;
+  font-size:25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recuardro2-distancia {
+  display: inline-block;
+}
+
+.recuadro2-tipo-de-lugar {
+  margin-bottom: 40px;
+  font-size:18px;
+}
+
+.recuadro2-rating {
+  display: inline-block;
+  padding-right: 205px;
+}
+
+.recuadro2-ver-más {
+  display: inline-block;
+}
+
+.recuadro3 {
+  width: 350px;
+  height: 150px;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  border-radius: 10px;
+  font-family: Montserrat;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-bottom: 10px solid #001730;
+}
+
+.recuadro3-title {
+  display: inline-block;
+  padding-right: 60px;
+  font-size:25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recuardro3-distancia {
+  display: inline-block;
+}
+
+.recuadro3-tipo-de-lugar {
+  margin-bottom: 40px;
+  font-size:18px;
+}
+
+.recuadro3-rating {
+  display: inline-block;
+  padding-right: 205px;
+}
+
+.recuadro3-ver-más {
+  display: inline-block;
+}
+
+.ver-mas-explora-lugares {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  color: #FF4847;
+  margin-top: 20px;
+}
+
+
+/* SECCION COMO FUNCIONA */
+#como-funciona {
+  height: 620px;
+  width: 1260px;
+  background-color:  #FFFFFF;
+  margin-top: 130px;
+  box-sizing: border-box;
+}
+
+.comofunciona-text {
+  width: 1260px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  color: #001730;
+  font-weight: bold;
+  line-height: 52px;
+}
+
+.botones-comoFunciona  {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 400px;
+}
+
+.botones-comoFunciona button {
+  height: 8px;
+  width: 76px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+.bag-funciones {
+  background-color: #FF4847;
+}
+
+.bag-funciones:hover {
+  cursor: pointer;
+}
+
+.bag-funciones2 {
+  background-color: #33EEE6;
+}
+
+.bag-funciones2:hover {
+  cursor: pointer;
+}
+
+.bag-funciones3 {
+  background-color: #33EEE6;
+}
+
+.bag-funciones3:hover {
+  cursor: pointer;
+}
+
+.bag-funciones4 {
+  background-color: #33EEE6;
+}
+
+.bag-funciones4:hover {
+  cursor: pointer;
+}
+
+.botones-comoFunciona button:focus {
+  outline: none;
+}
+
+/* PASO 1 */
+.paso1 {
+  display: inline-block;
+  height: 320px;
+  width: 1260px;
+}
+
+.img-paso1 {
+  display: inline-block;
+  height: 260px;
+  width: 398.91px;
+  margin-left: 100px;
+  vertical-align: bottom;
+  padding-bottom: 30px;
+}
+
+.paso1-reserva {
+  padding-top: 50px;
+  margin-left: 80px;
+  height: 270px;
+  width: 600px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+  display: inline-block;
+  text-align: right;
+}
+
+.res-1 {
+  font-family: Montserrat;
+  color: #FF4847;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.reserva2 {
+  font-family: Montserrat;
+  color: #2F2F2F;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.reserva3 {
+  font-family: Montserrat;
+  text-align: right;
+  color: #2F2F2F;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 22px;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+
+/* PASO 2 */
+.paso2 {
+  display: none;
+  height: 336px;
+  width: 1260px;
+}
+
+.img-paso2 {
+  height: 260px;
+  width: 398.91px;
+  display: none;
+  margin-left: 100px;
+  vertical-align: bottom;
+  padding-bottom: 30px;
+}
+
+.paso2-resguarda {
+  display: none;
+  display: inline-block;
+  padding-top: 50px;
+  margin-left: 80px;
+  height: 270px;
+  width: 600px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+  text-align: right;
+}
+
+.resguarda-2 {
+  font-family: Montserrat;
+  color: #FF4847;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.resguarda2-1 {
+  font-family: Montserrat;
+  color: #2F2F2F;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.resguarda2-2 {
+  font-family: Montserrat;
+  text-align: right;
+  color: #2F2F2F;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 22px;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+
+/* PASO 3 */
+
+.paso3 {
+  display: none;
+  height: 336px;
+  width: 1260px;
+}
+
+.img-paso3 {
+  height: 260px;
+  width: 398.91px;
+  margin-left: 100px;
+  vertical-align: bottom;
+  padding-bottom: 50px;
+  display: none;
+}
+
+.paso3-horaresguarda {
+  display: inline-block;
+  padding-top: 50px;
+  margin-left: 80px;
+  height: 320px;
+  width: 600px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+  text-align: right;
+}
+
+.resguarda-3 {
+  font-family: Montserrat;
+  color: #FF4847;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.hora-resguarda-text1 {
+  font-family: Montserrat;
+  color: #2F2F2F;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  display: inline-block;
+  padding-right: 40px;
+  text-align: left;
+}
+
+.hora-resguarda-text2 {
+  font-family: Montserrat;
+  text-align: right;
+  color: #2F2F2F;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 22px;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+
+/* PASO 4 */
+.paso4 {
+  display: none;
+  height: 336px;
+  width: 1260px;
+}
+
+.img-paso4 {
+  height: 260px;
+  width: 398.91px;
+  display: none;
+  margin-left: 100px;
+  vertical-align: bottom;
+  padding-bottom: 30px;
+}
+
+.paso4-recoge {
+  display: none;
+  padding-top: 50px;
+  margin-left: 80px;
+  height: 270px;
+  width: 600px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+  text-align: right;
+}
+
+.recoge-number {
+  font-family: Montserrat;
+  color: #FF4847;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.recoge-text1 {
+  font-family: Montserrat;
+  color: #2F2F2F;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  display: inline-block;
+  padding-right: 40px;
+  text-align: left;
+}
+
+.recoge-text2 {
+  font-family: Montserrat;
+  text-align: right;
+  color: #2F2F2F;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 22px;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+
+
+/* SECCION COTIZA */
+#cotiza-express-section {
+  height: 670px;
+  width: 1260px;
+  background-color:#FFFFFF;
+  margin-top: 100px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.img-cotiza-express {
+  height: 350px;
+  width: 500px;
+  text-align: right;
+}
+
+.cotiza-express {
+  display: flex;
+  height: 300px;
+}
+
+.cuanto-cuesta {
+  font-size: 40px;
+  font-family: Montserrat;
+  font-weight: bold;
+  line-height: 52px;
+  color: #001730;
+  text-align: center;
+}
+
+.cotiza-express-text {
+  display: inline-block;
+  font-family: Montserrat;
+  color: #001730;
+  font-size: 24px;
+  width: 514px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.inputs-cotiza-express {
+  display: inline-block;
+  width: 580px;
+  height: 230px;
+  margin-top: 50px;
+  margin-right: 365px;
+}
+
+.inputs-cotiza-express input {
+  width: 195px;
+  height: 35px;
+  border: none;
+  border-radius: 35.5px;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: Montserrat;
+  margin-right: 15px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.input-border-horas-cotiza-express {
+  display: inline-block;
+  width: 255px;
+  height: 54px;
+  border: none;
+  border-radius: 35.5px;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  background-color: #FFFFFF;
+  color: gray;
+  font-family: Montserrat;
+  text-align: right;
+  margin-left: 60px;
+}
+
+.input-border-maletas-cotiza-express {
+  display: inline-block;
+  width: 255px;
+  height: 54px;
+  border: none;
+  border-radius: 35.5px;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  background-color: #FFFFFF;
+  color: gray;
+  font-family: Montserrat;
+  text-align: right;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.calcular-costos {
+  width: 255px;
+  height: 54px;
+  border: none;
+  border-radius: 35.5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: Montserrat;
+  margin-left: 60px;
+  margin-top: 40px;
+  border: 2px solid #FF4847;
+  display: inline-block;
+}
+
+.calcular-costos:hover {
+  background-color: #FF4847;
+  cursor: pointer;
+  color: white;
+}
+
+.calcular-costos:focus {
+  outline: none;
+}
+
+.inputs-cotiza-express input:focus {
+  outline: none;
+}
+
+.inputs-cotiza-express input:hover {
+  cursor: pointer;
+}
+
+.horas-cotiza-express {
+  margin-bottom: 20px;
+}
+
+.articles-image {
+  height: 16.93px;
+  width: 20px;
+}
+
+.img-reloj-cotiza-express {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-bottom: 6px;
+}
+
+.result-cotiza-express {
+  width: 255px;
+  height: 100px;
+  margin-left: 55px;
+  border: none;
+  border-radius: 10.5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px 0 #CADAE9;
+  line-height: 24px;
+  display: none;
+}
+
+.precio-est-text {
+  font-family: Montserrat;
+  font-size: 25px;
+  text-align: center;
+  color: #001730;
+  font-weight: 500;
+  padding-top: 14px;
+  margin-bottom: 20px;
+}
+
+.total-precio-costo-aprox {
+  font-family: Montserrat;
+  font-size: 25px;
+  text-align: center;
+  color: #001730;
+  font-weight: 500;
+}
+
+
+/* COSAS SEGURAS SECTION */
+#por-qué-Baggarú-section {
+  width: 1276px;
+  height: 1200px;
+  box-sizing: border-box;
+}
+
+.lineas-por-qué-Baggarú {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.lineas-por-qué-Baggarú2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.recuadros-cosas-seguras {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contenedores-recuadros-cosas-seguras {
+  height: 394px;
+  width: 394px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+  border-top: 6px solid #4AD7D1;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedores-recuadros-cosas-seguras2 {
+  height: 394px;
+  width: 394px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+  border-top: 6px solid #001730;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedores-recuadros-cosas-seguras3 {
+  height: 394px;
+  width: 394px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+  border-top: 6px solid #001730;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedores-recuadros-cosas-seguras4 {
+  height: 394px;
+  width: 394px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+  border-top: 6px solid #4AD7D1;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-principal-cosas-seguras {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 52px;
+  color: #001730;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.titulos-recuadros-cosas-seguras {
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.descrip-cosas-seguras {
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  font-family: Montserrat;
+  width: 320px;
+}
+
+.descrip-cosas-seguras a {
+  color: #FF4847;
+}
+
+.check-icon {
+  width: 36px;
+  height: 36px;
+  padding-bottom: 20px;
+}
+
+.icon-security {
+  height: 41px;
+  width: 36px;
+  padding-bottom: 20px;
+}
+
+.estrella-icon {
+  width: 36px;
+  height: 36px;
+  padding-bottom: 20px;
+}
+
+.etiqueta-icon {
+  width: 36px;
+  height: 36px;
+  padding-bottom: 20px;
+}
+
+
+/* SECCION DE OBJETOS PERMITIDOS EN BAGARU */
+#objetos-permitidos {
+  width: 1276px;
+  height: 780px;
+  box-sizing: border-box;
+}
+
+.titulo-objetos-permitidos {
+  color: #001730;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.tamaños-objetos {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.tamaños-objetos button {
+  height: 46px;
+  width: 118px;
+  border-radius: 23px;
+  border: 2px solid #79899D opacity: 0.16 ;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.tamaños-objetos button:focus {
+  outline: none;
+}
+
+.botón-objeto-chico {
+  background-color: #4AD7D1;
+  color:#FFFFFF;
+}
+
+.botón-objeto-chico:hover {
+  cursor: pointer;
+}
+
+.botón-objeto-chico:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+.botón-objeto-mediano {
+  color: #9B9B9B;
+}
+
+.botón-objeto-mediano:hover {
+  cursor: pointer;
+}
+
+.botón-objeto-mediano:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+.botón-objeto-grande {
+  color: #9B9B9B;
+}
+
+.botón-objeto-grande:hover {
+  cursor: pointer;
+}
+
+.botón-objeto-grande:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+.tamaño-objetos-permitidos {
+  padding-top: 80px;
+}
+
+.tamaño-objetos-permitidos-descripción {
+  display: flex;
+  justify-content: center;
+}
+
+.tamaño-objetos-permitidos-descripción img {
+  height: 250px;
+}
+
+.img-maleta-pequeña-perfil {
+  padding-left: 110px;
+  padding-right: 130px;
+}
+
+.tamaño-objetos-permitidos ul {
+  list-style-image: url(images/punto.png);
+}
+
+.tamaño-objetos-permitidos ul p {
+  font-family: Montserrat;
+  color: #001730;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.tamaño-objetos-permitidos ul li {
+  font-family: Montserrat;
+  color: #001730;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 51px;
+}
+
+#objetos-permitidos a {
+  display: flex;
+  justify-content:center;
+  padding-top: 50px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.12px;
+  line-height: 22px;
+  color: #FF4847;
+}
+
+
+/* SECCION LUGARES DÓNDE DEJAR TUS COSAS */
+#lugares-para-dejar-cosas-section {
+  height: 650px;
+  box-sizing: border-box;
+}
+
+.lugares-title-principal {
+  color: #001730;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -0.26px;
+  line-height: 54px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.tipos-lugares {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 180px;
+  margin-right: auto;
+  height: 74px;
+  width: 950px;
+  color: #001730;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  text-decoration: underline solid #FF4847;
+}
+
+.img-tipos-lugares {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.img-tipos-lugares div {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+
+  height: 170px;
+  width: 170px;
+  border: 1px solid #4AD7D1;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 #E4ECF2;
+}
+
+.img-tipos-lugares img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.img-tipos-lugares p {
+  padding-top: 30px;
+  font-family: Montserrat;
+}
+
+.img-tipos-lugares img:hover {
+  transform: scale(0.8);
+  transition: all 1s;
+  cursor: grab;
+}
+
+.ver-más-lugares-para-dejar-cosas {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 50px;
+}
+
+.ver-más-lugares-para-dejar-cosas a {
+  font-family: Montserrat;
+  color: #FF4847;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  line-height: 27px;
+}
+
+
+/* SECCION DE COBERTURA BAGGARU EN MÉXICO */
+#lugares-donde-nos-puedes-encontrar-section {
+  height: 600px;
+  box-sizing: border-box;
+}
+
+#lugares-donde-nos-puedes-encontrar-section h2 {
+  font-family: Montserrat;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  line-height: 60px;
+}
+
+.lista-lugares-cobertura {
+  height: 240px;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.13px;
+  line-height: 60px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.lista-lugares-cobertura ul {
+  list-style-image: url(images/punto.png);
+}
+
+
+/* APARTADO DE SOCIO */
+#socio {
+  height: 395px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("images/socio_sección.png");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+#socio p {
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.26px;
+  line-height: 60px;
+
+}
+
+.socio-Info {
+  font-family: Montserrat;
+  height: 63px;
+  width: 391px;
+  border-radius: 35.5px;
+  color: #FFFFFF;
+  background-color: #FE4A49;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
+  border: none;
+}
+
+.socio-Info:hover {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: 2px solid  #FE4A49;
+  color: #001730;
+}
+
+.socio-Info:focus {
+  outline: none;
+}
+
+
+/* SECCION DE PREGUNTAS FRECUENTES */
+#sección-preguntas-frecuentes {
+  height: 1150px;
+  padding-top: 250px;
+  box-sizing: border-box;
+}
+
+#sección-preguntas-frecuentes h2 {
+  font-family: Montserrat;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.preguntas {
+  height: 81px;
+  width: 800px;
+  border: none;
+  border-radius: 40.5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 12px 0 #CADAE9;
+
+  color: #00133B;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 67px;
+  padding-right: 67px;
+}
+
+.flecha-abajo {
+  box-sizing: border-box;
+  height: 13px;
+  width: 22px;
+}
+
+.flecha-abajo:hover {
+  cursor: pointer;
+}
+
+.flecha-arriba {
+  box-sizing: border-box;
+  height: 13px;
+  width: 22px;
+  display: none;
+}
+
+.flecha-arriba:hover {
+  cursor: pointer;
+}
+
+#sección-preguntas-frecuentes a {
+  color: #FF4847;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.13px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+}
+
+/* SE DESPLIEGA PRIMERA PREGUNTA */
+.respuesta1 {
+  height: 212px;
+  width: 800px;
+  color: #00133B;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: none;
+}
+
+.pregunta2 {
+  height: 81px;
+  width: 940px;
+  border: none;
+  border-radius: 40.5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 12px 0 #CADAE9;
+
+  color: #00133B;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 67px;
+  padding-right: 67px;
+}
+
+.pregunta2 img {
+  box-sizing: border-box;
+  height: 13px;
+  width: 22px;
+}
+
+.pregunta2:hover {
+  cursor: pointer;
+}
+
+.pregunta2:focus {
+  outline: none;
+}
+
+
+/* MAPA */
+#map {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 640px;
+  height: 550px;
+}
+
+/* FOOTER */
+
+footer {
+  color:white;
+  font-family:Montserrat;
+  width: 1278px;
+  height: 430px;
+  background-color: #001731;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer-lado-izquierdo {
+  padding-left: 151px;
+  font-size: 14px;
+}
+
+.footer-lado-izquierdo img {
+  margin-top: 61.9px;
+  height: 34.71px;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 5px solid #FF4847;
+}
+
+.bag-des {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  height: 110px;
+  width: 364px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.terms {
+  margin-bottom: 5px;
+}
+
+.terms:hover {
+  cursor: pointer;
+}
+
+.legal {
+  margin-bottom: 5px;
+}
+
+.legal:hover {
+  cursor: pointer;
+}
+
+.privacy {
+  margin-bottom: 5px;
+}
+
+.privacy:hover {
+  cursor: pointer;
+}
+
+.copy {
+  margin-top: 25px;
+}
+
+.footer-lado-derecho {
+  margin-top: 124px;
+  padding-right: 151px;
+  text-align: right;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.todos-nuestros-socios-footer:hover {
+  cursor: pointer;
+}
+
+.socio-footer:hover {
+  cursor: pointer;
+}
+
+.ayuda-footer:hover {
+  cursor: pointer;
+}
+
+.alguna-duda {
+  padding-top: 87px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.escribe-al-correo-dudas {
+  font-weight: 500;
+  line-height: 28px;
+}
+
+
+
+/* #funciona {
+  display: flex;
+  width: 1260px;
+  height: 100%;
+  background-color: white;
+} */
+
+/* CONFIRMA DATOS */
+.confirm-datos {
+  background-color: #FFFFFF;
+  width: 1260px;
+  height: 100%;
+  margin-top: 100px;
+  display: none;
+}
+
+.datos {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  height: 550px;
+  width: 600px;
+  border-radius: 0 0 10px 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 32px 16px #E4ECF2;
+}
+
+.datos h1 {
+  padding-top: 30px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: Montserrat;
+  color: black;
+  font-weight: bold;
+  width: 450px;
+  margin-left: 70px;
+}
+
+.datos p {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30px;
+}
+
+.aceptar-datos {
+  position: absolute;
+  bottom: 40px;
+  right: 195px;
+  width: 255px;
+  height: 54px;
+  border-radius: 35.5px;
+  border: 1px solid #FF4847;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.aceptar-datos:focus {
+  outline: none;
+}
+
+.aceptar-datos:hover {
+  background-color: #FF4847;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.regresa-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 120px;
+  left: 670px;
+}
+
+.regresa-icon:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+
+
+
+/* RESERVA */
+.reserv-title {
+  font-family: Montserrat;
+  font-size: 30px;
+  border-bottom: 5px solid #FF4847;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+
+.aceptar-datos2 {
+  position: absolute;
+  bottom: 40px;
+  right: 195px;
+  width: 255px;
+  height: 54px;
+  border-radius: 35.5px;
+  border: 1px solid #FF4847;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.aceptar-datos2:focus {
+  outline: none;
+}
+
+.aceptar-datos2:hover {
+  background-color: #FF4847;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.aviso-confirm {
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+}
+
+
+@media screen and (max-width: 400px) {
+  .contenedor-general {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    width: 100%;
+  }
+}

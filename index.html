@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Baggarú</title>
+    <link rel="stylesheet" href="styles.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+      </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <div class="contenedor-general">
+
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png"  alt="Logo Baggaru" >
+        </div>
+        <nav class = "navegacion">
+          <ul class="menu">
+            <li><a href="#como-funciona" class= "opciones-menu">¿Cómo funciona?</a></li>
+              <li><a href="#cotiza-express-section" class= "opciones-menu" href="#">¡Cotiza!</a></li>
+            <li><a href="#socio" class= "opciones-menu">Socio Baggarú</a></li>
+            <li><a class= "opciones-menu" href="#">Iniciar sesión</a></li>
+            <li><a class="opciones-menu" href="#">Registrarme</a></li>
+            <li><a class= "opciones-menu" href="#">ESP ↓</a></li>
+          </ul>
+        </nav>
+        <span class="target"></span>
+      </header>
+
+      <section class="home">
+        <div class="slogan">
+          <p>Cuidamos tu equipaje<br>para que viajes ligero</p>
+          <img src="images/imagen_principal.png" alt="imagenViajero">
+        </div>
+
+        <form id="form-datos">
+        <article class="inputs">
+          <div class="input-localizador">
+            <div class="input1-border">
+              <label for="localizador-input"></label>
+              <input class="localizador" type= "text"  placeholder= "Ubicación" name="ubicacion">
+                <img src="images/localizador.png" alt="icono-localizador">
+            </div>
+          </div>
+          <div class="calendarObjects">
+            <div class="input2-border">
+              <img src="images/calendario.png" class="calendar-icon" alt="calendar-icon">
+              <label for="calendario-input"></label>
+              <input class="calendario" type= "date" name="fecha" value="Calendar">
+
+            </div>
+            <div class="input3-border">
+              <img src="images/maleta-icon.png" class="maleta-icon" alt="maleta-input">
+              <label for="maletas-input"></label>
+              <input list= "lista-maletas" class="num-maletas" type= "number" name="maletas" value="maletas" placeholder="Maletas" >
+
+              <datalist id="lista-maletas">
+                <option value= 1>
+                <option value= 2>
+                <option value= 3>
+                <option value= 4>
+                <option value= 5>
+                <option value= 6>
+                <option value= 7>
+                <option value= 8>
+                <option value= 9>
+                <option value= 10>
+              </datalist>
+            </div>
+          </div>
+          <input class="buscar" type="submit" name="buscar" value="Buscar">
+
+        </form>
+      </article>
+    </section>
+
+    <!-- SECCION PARA CONFIRMAR DATOS -->
+    <section class="confirm-datos">
+      <div id="map"></div>
+      <div class="datos">
+        <h1>Confirma tus datos, por favor:</h1>
+        <button class="aceptar-datos" type="button" name="button-aceptar-datos" onclick="aceptarDatos()">Aceptar</button>
+        <img src="images/back.png" class="regresa-icon" alt="icon-return" onclick="regresa()" type = "reset">
+      </div>
+    </section>
+
+
+    <section id= "explora-lugares-baggaru">
+      <h2>Explora nuestros Espacios Baggarú</h2>
+      <article class="recuadros-explora-lugares">
+        <div class="recuadro1">
+          <p class="recuadro1-title">Los tulipanes</p>
+          <p class="recuardro1-distancia">A 0.2 km</p>
+          <p class="recuadro1-tipo-de-lugar">RESTAURANTE</p>
+          <p class="recuadro1-rating">Calificación</p>
+          <p class="recuadro1-ver-más">Ver -></p>
+        </div>
+
+        <div class="recuadro2">
+          <p class="recuadro2-title">Las campanas</p>
+          <p class="recuardro2-distancia">A 0.4 km</p>
+          <p class="recuadro2-tipo-de-lugar">HOSTAL</p>
+          <p class="recuadro2-rating">Calificación</p>
+          <p class="recuadro2-ver-más">Ver -></p>
+        </div>
+
+        <div class="recuadro3">
+          <p class="recuadro3-title">Los compadres</p>
+          <p class="recuardro3-distancia">A 0.8 km</p>
+          <p class="recuadro3-tipo-de-lugar">BAR</p>
+          <p class="recuadro3-rating">Calificación</p>
+          <p class="recuadro3-ver-más">Ver -></p>
+        </div>
+      </article>
+      <a href class="ver-mas-explora-lugares">Ver más</a>
+    </section>
+
+
+      <!-- SECCION CÓMO FUNCIONA  -->
+    <section id="como-funciona">
+      <div class="contenido-como-funciona">
+        <p class="comofunciona-text">¿Cómo funciona?</p>
+      </div>
+      <div class="botones-comoFunciona">
+
+        <button class="bag-funciones" onclick= "paso1()"></button>
+
+        <button class="bag-funciones2"onclick= "paso2()"></button>
+
+        <button class="bag-funciones3" onclick= "paso3()"></button>
+
+        <button class="bag-funciones4" onclick= "paso4()"></button>
+
+      </div>
+
+      <div class="paso1">
+        <img src="images/paso_1.png"  class="img-paso1" alt="paso1-func">
+
+        <div class="paso1-reserva">
+          <p class="res-1">1</p>
+          <p class="reserva2">Reserva tu Espacio<br>Baggarú</p>
+          <p class="reserva3">Encuentra el punto más<br>conveniente para ti y resérvalo.</p>
+        </div>
+      </div>
+
+      <div class="paso2">
+        <img src="images/paso_2.png" class="img-paso2" alt="paso2-func">
+
+        <div class="paso2-resguarda">
+          <p class="resguarda-2">2</p>
+          <p class="resguarda2-1">Resguarda<br>tus objetos</p>
+          <p class="resguarda2-2">Ve al punto que seleccionaste<br>y entrega tus pertenencias a<br>tu <em>Guardián Baggarú.</em></p>
+        </div>
+      </div>
+
+      <div class="paso3">
+        <img src="images/paso_3.png" class="img-paso3" alt="paso3-func">
+
+        <div class="paso3-horaresguarda">
+          <p class="resguarda-3">3</p>
+          <p class="hora-resguarda-text1">Registra la<br>hora de inicio</p>
+          <p class="hora-resguarda-text2">Inicia el <em>reloj Baggarú</em><br> desde tu página de reserva<br> para que pagues lo justo<br> por el tiempo de resguardo,<br>y ¡disfruta tu día!</p>
+        </div>
+      </div>
+
+      <div class="paso4">
+        <img src="images/paso_4.png" class="img-paso4" alt="paso4-func">
+
+        <div class="paso4-recoge">
+          <p class="recoge-number">4</p>
+          <p class="recoge-text1">Recoge tus<br>pertenencias</p>
+          <p class="recoge-text2">Regresa al <em>Espacio Baggarú.</em><br>Detén el reloj y paga <br>de acuerdo al tiempo de uso.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- COTIZADOR EXPRESS -->
+  <section id = "cotiza-express-section">
+    <div class="cuanto-cuesta">
+      <p class="cuanto-cuesta-text">¿Quieres saber cuánto pagarías?</p>
+    </div>
+    <p class="cotiza-express-text">Calcula con base en la cantidad de piezas<br>que cuidaremos y el tiempo de resguardo:</p>
+
+    <div class="cotiza-express">
+      <div class="inputs-cotiza-express">
+
+      <div class="input-border-horas-cotiza-express">
+        <img src="images/reloj.png" class="img-reloj-cotiza-express" alt="horas-input">
+        <input list="lista-horas" class="horas-cotiza-express" type= "number" name="hoursCotizaExpress" value="hours" placeholder="Horas">
+        <datalist id="lista-horas">
+          <option value= 1>
+          <option value= 2>
+          <option value= 3>
+          <option value= 4>
+          <option value= 5>
+          <option value= 6>
+          <option value= 7>
+          <option value= 8>
+          <option value= 9>
+          <option value= 10>
+          <option value= 11>
+          <option value= 12>
+        </datalist>
+      </div>
+
+      <div class="input-border-maletas-cotiza-express">
+        <img src="images/maleta-icon.png" class="articles-image" alt="bags-icon">
+        <input list="lista-articulos" class="articulos-cotiza-express" type= "number" name="artículosCotizaExpress" value="articles" placeholder="Objetos">
+        <datalist id="lista-articulos">
+          <option value= 1>
+          <option value= 2>
+          <option value= 3>
+          <option value= 4>
+          <option value= 5>
+          <option value= 6>
+          <option value= 7>
+          <option value= 8>
+          <option value= 9>
+          <option value= 10>
+          <option value= 11>
+          <option value= 12>
+        </datalist>
+      </div>
+
+      <button class="calcular-costos" type="button" name="button-calcular-costos" onclick="costoAprox()">Calcular</button>
+    </div>
+    <img src="images/imagen_cotizador.png" class="img-cotiza-express" alt="img-cotizador">
+    </div>
+    <div class="result-cotiza-express"></div>
+  </section>
+
+
+  <!-- SECCION POR QUÉ BAGGARÚ -->
+  <section id = "por-qué-Baggarú-section">
+
+    <p class="titulo-principal-cosas-seguras">¿Por qué viajar con Baggarú?</p>
+
+      <article class="lineas-por-qué-Baggarú">
+        <div class="contenedores-recuadros-cosas-seguras">
+          <img class="check-icon" src="images/palomita.png" alt="palomita">
+          <p class="titulos-recuadros-cosas-seguras">Espacios Baggarú verificados</p>
+          <p class="descrip-cosas-seguras">Seleccionamos establecimientos que cumplan con nuestros <a href ="">estándares de seguridad.</a></p>
+        </div>
+        <div class="contenedores-recuadros-cosas-seguras2">
+          <img  class="icon-security" src="images/seguros.png" alt="icono-seguridad">
+          <p class = "titulos-recuadros-cosas-seguras">Seguro contra daños y robo</p>
+          <p class="descrip-cosas-seguras">Todo el equipaje que cuidamos es asegurado por *Nom. Aseg* durante el tiempo de servicio.</p>
+        </div>
+      </article>
+
+      <article class="lineas-por-qué-Baggarú2">
+        <div class="contenedores-recuadros-cosas-seguras3">
+          <img class="estrella-icon" src="images/estrella.png" alt="estrella-hecho-en-México">
+          <p class="titulos-recuadros-cosas-seguras">Hechos en México</p>
+          <p class="descrip-cosas-seguras">Somos la primera plataforma mexicana que te ofrece este servicio. Por eso conocemos las necesidades de los viajeros del país mejor que nadie.</p>
+        </div>
+        <div class="contenedores-recuadros-cosas-seguras4">
+          <img  class="etiqueta-icon" src="images/etiqueta.png" alt="icono-etiqueta">
+          <p class = "titulos-recuadros-cosas-seguras">Tarifa justa</p>
+          <p class="descrip-cosas-seguras">Pagas sólo por el tiempo que cuidamos tu equipaje. El precio se calcula con base en la cantidad de piezas, sin cargos por su tamaño o contenido.</p>
+        </div>
+      </article>
+  </section>
+
+  <!-- OBJETOS PERMITIDOS EN BAGGARÚ -->
+  <section id= "objetos-permitidos">
+    <p class="titulo-objetos-permitidos">Equipaje que puedes dejar en los Espacios Baggarú</p>
+
+    <article class="tamaños-objetos">
+      <button class="botón-objeto-chico" onclick= "tamañoChico()">CH</button>
+      <button class="botón-objeto-mediano" onclick= "tamañoMediano()">M</button>
+      <button class="botón-objeto-grande" onclick= "tamañoGrande()">G</button>
+    </article>
+
+    <article class="tamaño-objetos-permitidos">
+      <div class="tamaño-objetos-permitidos-descripción">
+        <img class="img-maleta-pequeña" src="images/mochila_1.png" alt="mochila-pequeña">
+        <img class="img-maleta-pequeña-perfil" src="images/mochila_2.png" alt="mochila-pequeña-perfil">
+        <ul>
+          <p>Puede ser:</p>
+          <li>Mochilas</li>
+          <li>Bolsas</li>
+          <li>Equipaje de mano</li>
+          <li>Hasta 5 kg</li>
+        </ul>
+      </div>
+    </article>
+    <a href="#">Artículos no aceptados</a>
+  </section>
+
+
+<!-- SECCIÓN DE TIPO DE ESPACIOS BAGGARÚ -->
+  <section id="lugares-para-dejar-cosas-section">
+    <p class="lugares-title-principal">Tipo de Espacios Baggarú</p>
+
+    <article class="img-tipos-lugares">
+      <div class="tiendas">
+        <img src="images/tiendas.png" alt="img-tiendas">
+        <p>Tiendas</p>
+      </div>
+      <div class="restaurantes">
+        <img src="images/restaurantes.png" alt="img-restaurantes">
+        <p>Restaurantes</p>
+      </div>
+      <div class="hostales">
+        <img src="images/hostal.png" alt="img-hostales">
+        <p>Hostales</p>
+      </div>
+    </article>
+    <div class="ver-más-lugares-para-dejar-cosas">
+      <a href="#">Ver más</a>
+      <a href="#">Ver más</a>
+      <a href="#">Ver más</a>
+    </div>
+  </section>
+
+
+  <!-- SECCION DE LA COBERTURA EN MÉXICO DE BAGGARÚ -->
+  <section id="lugares-donde-nos-puedes-encontrar-section">
+    <h2>Lugares donde nos puedes encontrar</h2>
+    <div class="lista-lugares-cobertura">
+      <ul>
+        <li>CDMX</li>
+        <li>Edomex</li>
+        <li>Puebla</li>
+        <li>Querétaro</li>
+      </ul>
+      <ul>
+        <li>Qintana Roo</li>
+        <li>Guerrero</li>
+        <li>Veracruz</li>
+        <li>Oaxaca</li>
+      </ul>
+      <ul>
+        <li>Zacatecas</li>
+        <li>Guadalajara</li>
+        <li>Chiapas</li>
+        <li>Monterrey</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- CONVIÉRTETE EN SOCIO -->
+  <section id="socio">
+    <p>¿Quieres ganar dinero por el <br>espacio libre que tienes en tu local?</p>
+    <button class="socio-Info" type="button" name="button-info-socio" onclick="hazteSocio()">Conviértete en socio</button>
+  </section>
+
+
+  <!-- SECCION DE PREGUNTAS FRECUENTES -->
+  <section id="sección-preguntas-frecuentes">
+    <h2>Preguntas frecuentes</h2>
+
+    <article class="preguntas-frecuentes">
+        <div class="preguntas">
+          <p>¿Cómo guardar mis cosas?</p>
+          <img class="flecha-abajo" src="images/flecha-abajo.png" alt="flecha-combo" onclick="muestraInfo1()">
+          <img class="flecha-arriba" src="images/flecha.png" alt="flecha-combo" onclick="desapareceResp1()">
+        </div>
+          <div class="respuesta1">
+            <p>1. Debes buscar y reservar el espacio Baggarú más cercano a ti.<br>
+               2. Ve al espacio que reservaste, guarda tus cosas e inicia el reloj desde nuestro sitio.<br>
+                  Y, ¡listo! Así de fácil es guardar tu equipaje con nosotros para que sigas explorando el mundo de forma ligera.</p>
+          </div>
+
+        <div class="preguntas">
+          <p>¿Cómo calcular el precio?</p>
+          <img class="flecha-abajo" src="images/flecha-abajo.png" alt="flecha-combo" onclick="muestraInfo2()">
+          <img class="flecha-arriba" src="images/flecha.png" alt="flecha-combo" onclick="desapareceResp2()">
+        </div>
+          <div class="respuesta2">
+            <p></p>
+          </div>
+
+        <div class="preguntas">
+          <p>¿Cuál es el método de pago?</p>
+          <img class="flecha-abajo" src="images/flecha-abajo.png" alt="flecha-combo" onclick="muestraInfo3()">
+          <img class="flecha-arriba" src="images/flecha.png" alt="flecha-combo" onclick="desapareceResp3()">
+        </div>
+          <div class="respuesta3">
+            <p></p>
+          </div>
+
+        <div class="preguntas">
+          <p>¿Cómo puedo ser socio?</p>
+          <img class="flecha-abajo" src="images/flecha-abajo.png" alt="flecha-combo" onclick="muestraInfo4()">
+          <img class="flecha-arriba" src="images/flecha.png" alt="flecha-combo" onclick="desapareceResp4()">
+        </div>
+          <div class="respuesta4">
+            <p></p>
+          </div>
+
+        <div class="preguntas">
+          <p>¿Mis cosas están aseguradas?</p>
+          <img class="flecha-abajo" src="images/flecha-abajo.png" alt="flecha-combo" onclick="muestraInfo5()">
+          <img class="flecha-arriba" src="images/flecha.png" alt="flecha-combo" onclick="desapareceResp5()">
+        </div>
+          <div class="respuesta5">
+            <p></p>
+          </div>
+
+        <a href="#">Ver todas</a>
+    </article>
+  </section>
+
+
+  <!-- FOOTER -->
+    <footer>
+      <div class="footer-lado-izquierdo">
+        <img src="images/logo.png" alt="Logo Baggaru">
+        <p class="bag-des">Te acompañamos en los momentos más memorables de tu vida: ¡tus viajes!<br>
+          Nuestros Socios  Baggarú mantienen tus pertenencias seguras y cerca de ellos para que sigas tu camino libre y ligero.</p>
+        <p class="terms">Terms and Conditions</p>
+        <p class="legal">Legal Notices</p>
+        <p class="privacy">Privacy Policy</p>
+        <p class="copy">Copyright 2019. Todos los derechos reservados.</p>
+      </div>
+
+      <div class="footer-lado-derecho">
+        <p class="todos-nuestros-socios-footer">Todos nuestros Socios</p>
+        <p class="socio-footer">Sé un Socio Baggarú</p>
+        <p class="ayuda-footer">Ayuda</p>
+
+        <p class="alguna-duda">¿Tienes alguna duda?</p>
+        <p class="escribe-al-correo-dudas">Escríbenos a hello@baggaru.com</p>
+      </div>
+    </footer>
+  </div> <!-- AQUI CIERRA EL CONTENEDOR GENERAL DECLARADO AL INICIO DEL HTML -->
+    <script src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABgHY5Q1gPQEaGBwnFG0cqXlRS3rREAP4&libraries=places&callback=initMap"
+    async defer></script>
+  </body>
+</html>
